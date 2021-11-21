@@ -1,3 +1,18 @@
+kali开启USB-wifi-热点
+=====================================
+1.插入usb-wifi;  
+2.安装create_ap：  
+sudo git clone https://github.com/oblique/create_ap  
+cd create_ap  
+sudo make install  
+3.安装依赖库;  
+apt install hostapd dnsmasq  
+4.开启wifi热点(密码12345678):  
+create_ap --no-virt wlan0 eth0 free-wifi-name 12345678  
+  
+  
+=====================================
+  
 ## NOT MAINTAINED
 
 This project is no longer maintained.
